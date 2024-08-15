@@ -86,3 +86,24 @@ $ btcc OP_DUP OP_HASH160 897c81ac37ae36f7bc5b91356cfb0138bfacb3c1 OP_EQUALVERIFY
 ```
 
 The above is the script pub key for a transaction in Bitcoin in human readable format turned into its hexadecimal representation.
+
+
+# Red's Windowtard Notes
+Run in WSL
+ensure you're using Unix-style line endings (LF)
+
+```
+dos2unix autogen.sh
+find . -name \*.m4|xargs dos2unix
+find . -name \*.ac|xargs dos2unix
+find . -name \*.am|xargs dos2unix
+```
+or just convert en masse
+```
+find . -type f -exec dos2unix {} +
+```
+
+and some build essentials for the config to run 
+```
+sudo apt install build-essential
+```
